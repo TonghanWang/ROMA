@@ -44,6 +44,13 @@ env_args.map_name=MMM2
 t_max=20050000
 ```
 
+To test other maps, add parameters
+
+```shell
+h_loss_weight=5e-2
+var_floor=1e-4
+```
+
 The config files act as defaults for an algorithm or environment. 
 
 They are all located in `src/config`.
