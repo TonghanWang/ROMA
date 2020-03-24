@@ -65,11 +65,6 @@ class LatentCEDisRNNAgent(nn.Module):
         self.bs = bs
         loss = 0
 
-        if self.args.runner == "episode":
-            self.writer = SummaryWriter(
-                "results/tb_logs/test_latent-" + time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime()))
-        self.trajectory = []
-
         var_mean=self.latent[:self.n_agents, self.args.latent_dim:].detach().mean()
 
         #mask = 1 - th.eye(self.n_agents).byte()
@@ -164,13 +159,6 @@ class LatentCEDisRNNAgent(nn.Module):
         q = th.bmm(h, fc2_w) + fc2_b
 
         h = h.reshape(-1, self.args.rnn_hidden_dim)
-
-        if self.args.runner == "episode":
-            self.writer.add_embedding(self.latent.reshape(-1, self.latent_dim * 2), list(range(self.args.n_agents)),
-                                      global_step=t, tag="latent-cur")
-            self.writer.add_embedding(self.latent_infer.reshape(-1, self.latent_dim * 2),
-                                      list(range(self.args.n_agents)),
-                                      global_step=t, tag="latent-hist")
 
         return q.view(-1, self.args.n_actions), h.view(-1, self.args.rnn_hidden_dim), loss, c_dis_loss, ce_loss
 
