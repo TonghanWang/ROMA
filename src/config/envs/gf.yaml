@@ -1,0 +1,28 @@
+env: gf
+
+env_args:
+  # seed: null                    # Added because of Solving the Sacred 0.75 issue where config is read-only
+  env_name: 'test_example_multiagent'
+  # stacked=False
+  # logdir='/tmp/rllib_test'
+  # write_goal_dumps=False
+  # write_full_episode_dumps=False
+  # render=True,
+  # dump_frequency=0,
+  # number_of_left_players_agent_controls=num_agents
+  # channel_dimensions=(42, 42)
+
+
+obs_last_action: False # Whether the last action of all agents (in the sight range) are included in the obs
+obs_agent_id: False # Include the agent's one_hot id in the observation
+use_tensorboard: True # Log results to tensorboard
+save_model: True # Save the models to disk
+save_model_interval: 500 # Save models after this many timesteps
+
+test_nepisode: 32
+test_interval: 10000
+log_interval: 2000
+runner_log_interval: 2000
+learner_log_interval: 2000
+t_max: 2000000
+
