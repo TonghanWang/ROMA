@@ -34,7 +34,8 @@ var_floor: 2e-3
 NN_HIDDEN_SIZE: 16
 dis_loss_weight: 1e-4
 dis_time: 0
-soft_constraint_weight: 10
+soft_constraint_weight: 1.0
+roma_raw: False
 
 
 dis_sigmoid: False
