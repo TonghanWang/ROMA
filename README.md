@@ -3,6 +3,7 @@
 
 ## Note
  This codebase accompanies the paper submission "ROMA: Multi-Agent Reinforcement Learning with Emergent Roles", and is based on  [PyMARL](https://github.com/oxwhirl/pymarl) and [SMAC](https://github.com/oxwhirl/smac) codebases which are open-sourced.
+ROMA [website](https://sites.google.com/view/romarl).
 
 The implementation of the following methods can also be found in this codebase, which are finished by the authors of [PyMARL](https://github.com/oxwhirl/pymarl):
 
