@@ -2,11 +2,11 @@
 # ROMA: Multi-Agent Reinforcement Learning with Emergent Roles
 
 ## Note
- This codebase accompanies the paper submission "ROMA: Multi-Agent Reinforcement Learning with Emergent Roles", and is based on  [PyMARL](https://github.com/oxwhirl/pymarl) and [SMAC](https://github.com/oxwhirl/smac) codebases which are open-sourced.
-ROMA [website](https://sites.google.com/view/romarl).
+ This codebase accompanies the paper submission "ROMA: Multi-Agent Reinforcement Learning with Emergent Roles" ([website](https://sites.google.com/view/romarl)), and is based on  [PyMARL](https://github.com/oxwhirl/pymarl) and [SMAC](https://github.com/oxwhirl/smac) codebases which are open-sourced.
 
 The implementation of the following methods can also be found in this codebase, which are finished by the authors of [PyMARL](https://github.com/oxwhirl/pymarl):
 
+- [**ROMA**: ROMA: Multi-Agent Reinforcement Learning with Emergent Roles](https://arxiv.org/abs/2003.08039)
 - [**QMIX**: QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1803.11485)
 - [**COMA**: Counterfactual Multi-Agent Policy Gradients](https://arxiv.org/abs/1705.08926)
 - [**VDN**: Value-Decomposition Networks For Cooperative Multi-Agent Learning](https://arxiv.org/abs/1706.05296) 
