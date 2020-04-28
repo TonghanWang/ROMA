@@ -24,15 +24,15 @@ mixing_embed_dim: 32
 # for latent model
 name: "qmix_smac_latent_parallel"
 
-agent: "latent_rnn"
+agent: "latent_ce_dis_rnn"
 mac: "separate_mac"
 
 latent_dim: 3
-kl_loss_weight: 1e-4
-h_loss_weight: 1e-2
-var_floor: 2e-3
+kl_loss_weight: 0.0001
+h_loss_weight: 0.0001
+var_floor: 0.002
 NN_HIDDEN_SIZE: 16
-dis_loss_weight: 1e-4
+dis_loss_weight: 0.001
 dis_time: 0
 soft_constraint_weight: 1.0
 roma_raw: False
