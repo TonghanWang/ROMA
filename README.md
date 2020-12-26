@@ -1,4 +1,4 @@
-In ROMA's ICML paper, we use [an old version of the SMAC benchamrk](https://arxiv.org/pdf/1902.04043v1.pdf) for both ROMA and the baselines (QMIX, COMA, IQL, MAVEN, QTRAN), and their performance are different from that can be achieved by the latest version.
+In ROMA's ICML paper, we use [an old version of the SMAC benchmark](https://arxiv.org/pdf/1902.04043v1.pdf) for both ROMA and the baselines (QMIX, COMA, IQL, MAVEN, QTRAN), and their performance are different from that can be achieved by the latest version.
 
 # ROMA: Multi-Agent Reinforcement Learning with Emergent Roles
 
